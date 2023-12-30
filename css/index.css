@@ -24,11 +24,14 @@ div.container1 h1 {
     left: 8%;
     text-shadow: 5px 5px 5px grey;
     transition: 2s all ease;
+    font-family: 'Merriweather', sans-serif;
+
 }
 
 div.container1 h1:hover {
     color: white;
     text-shadow: 2px 2px 2px black;
+    letter-spacing: 0.2rem;
 }
 
 div.ljubimci h2,
