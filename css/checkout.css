@@ -1,0 +1,83 @@
+main {
+    width: 65vw;
+    margin: 0 auto;
+    font-family: 'Catamaran', serif;
+}
+
+div.container {
+    display: flex;
+    box-shadow: 0.5px 0.5px 5px grey;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.placanje {
+    padding: 1rem;
+    background-color: rgb(239, 239, 239);
+    width: 50%;
+}
+
+img {
+    width: 60px;
+    float: left;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+legend,
+.kosarica h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+input {
+    padding: 0.5rem 15rem 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #6363e8;
+
+}
+
+textarea {
+    margin-bottom: 2rem;
+    font-family: 'Poppins', serif;
+    border-radius: 5px;
+    border: 1px solid #6363e8;
+}
+
+
+button {
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #6363e8;
+    color: white;
+    font-family: cambria;
+    font-size: 1.2rem;
+    transition: 0.3s all ease;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: rgb(252, 252, 175);
+    color: black;
+}
+
+form {
+    padding: 1rem;
+}
+
+.total2 {
+    font-weight: 800;
+}
+
+td {
+    padding: 1rem;
+}
+
+span {
+    font-size: 0.8rem;
+}

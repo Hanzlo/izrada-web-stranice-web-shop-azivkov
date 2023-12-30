@@ -1,0 +1,29 @@
+body {
+    background-image: url(../images/output-onlinepngtools2.png);
+}
+
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px grey;
+    transition: 1s all linear;
+    text-align: center;
+}
+
+h1:hover {
+    word-spacing: 1rem;
+}
+
+main {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    box-shadow: 0.5px 0.5px 5px grey;
+}
+
+span {
+    font-weight: 800;
+}
+

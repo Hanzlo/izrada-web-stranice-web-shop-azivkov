@@ -1,0 +1,93 @@
+body {
+    background-image: url(../images/output-onlinepngtools2.png);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 5px grey;
+    transition: 0.5s all linear;
+}
+
+h1:hover {
+    letter-spacing: 1rem;
+}
+
+div.container {
+    padding: 0 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+div.zivotinje {
+    text-align: center;
+    margin-right: 10rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+    color: #9393eb;
+    opacity: 80%;
+}
+
+li h3 {
+    margin: 0 0 1rem 0;
+}
+
+div.zivotinje img {
+    border-radius: 50%;
+    transition: 1s all linear;
+    width: 150px;
+}
+
+div.zivotinje img:hover {
+    border-radius: 0;
+}
+
+div.kategorije img {
+    width: 300px;
+    box-shadow: 0.5px 0.5px 5px grey;
+}
+
+div.kategorije h2 {
+    font-size: 2.5rem;
+}
+
+div.kategorije ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.kategorije li {
+    padding: 1.5rem;
+}
+
+@media screen and (max-width:768px) {
+
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.kategorije ul {
+        display: block;
+    }
+
+    div.zivotinje {
+    order: 2;
+   }
+
+   div.kategorije img {
+    width: 200px;
+}
+}

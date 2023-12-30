@@ -1,0 +1,58 @@
+
+main {
+    padding: 1rem;
+    position: relative;
+    background-image: url(../images/output-onlinepngtools2.png);
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 3rem;    
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+
+table {
+    width: 60%;
+    margin-bottom: 5rem;
+}
+
+img {
+    width: 60px;
+    float: left;
+}
+
+.total {
+    font-weight: 800;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.total2 {
+    padding: 1rem;
+}
+
+button {
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #6363e8;
+    color: white;
+    font-family: cambria;
+    font-size: 1.2rem;
+    transition: 0.3s all ease;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+button:hover {
+    background-color: rgb(252, 252, 175);
+    color: black;
+}
+

@@ -1,0 +1,60 @@
+
+img {
+    max-width: 100%;
+}
+
+div.back {
+    padding: 1rem;
+}
+
+div.back a {
+    text-decoration: none;
+    color: #9393eb;
+}
+
+div.back a:hover {
+    text-decoration: underline;
+}
+
+div.container {
+    display: flex;
+    margin-right: 5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+div.container p {
+    font-size: 1.2rem;
+}
+
+div.container p:nth-child(3) {
+    font-weight: 800;
+}
+
+button {
+    border: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #9393eb;
+    color: white;
+    transition: 0.3s all ease;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: rgb(252, 252, 175);
+    color: black;
+}
+
+.checked {
+    color: orange;
+}
+
+
+@media screen and (max-width:768px) {
+    div.container {
+        display: block;
+    }
+}

@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+section {
+    background-color: rgb(180, 178, 178);
+    font-family: cambria;
+}
+
+div.row1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+div.row2 {
+    text-align: right;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mapa a {
+    text-decoration: none;
+    color: #6363e8;
+}
+
+.mapa a:hover {
+    color: white;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+div.lokacija {
+    align-self: center;
+}
+
+.kontakt li {
+    padding: 0.3rem 0;
+}
+
+iframe {
+    width: 400px; 
+    height: 250px; 
+    border: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .lokacija iframe {
+        width: 300px;
+    }
+}

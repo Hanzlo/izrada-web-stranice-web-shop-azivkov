@@ -1,0 +1,74 @@
+
+main {
+    background-image: url(images/output-onlinepngtools2.png);
+    font-family: cambria;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;   
+    text-align: center;
+    transition: 1s all linear;
+    text-shadow: 2px 2px 2px grey;
+}
+
+h1:hover {
+    letter-spacing: 1rem;
+}
+
+div.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    max-width: 500px;
+    transition: 1s all ease-in;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+div.form span {
+    font-size: 0.8rem;
+}
+
+div.contact span {
+    font-weight: 800;
+}
+
+input {
+    padding: 0.2rem 7rem 0.2rem 0rem;
+}
+
+textarea {
+    font-family: cambria;
+    font-size: 1.3rem;
+}
+
+input, textarea {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    background-color: #e6e6fb;
+}
+
+button {
+    border: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #6363e8;
+    color: white;
+    font-family: cambria;
+    font-size: 1.2rem;
+    transition: 0.3s all ease;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: rgb(252, 252, 175);
+    color: black;
+}

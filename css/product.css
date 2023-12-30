@@ -1,0 +1,122 @@
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    background-color: rgb(255, 255, 194);
+    text-shadow: 3px 5px 5px grey;
+    transition: 0.5s all linear;
+}
+
+h1:hover {
+    letter-spacing: 1rem;
+}
+
+div.container {
+    display: flex;
+}
+
+div.aside {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    width: 20%;
+}
+
+div.aside button {
+    border: 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: cambria;
+    margin-top: 1rem;
+    background-color: #6363e8;
+    color: white;
+    transition: 0.3s all ease;
+}
+
+div.aside button:hover, div.products button:hover {
+    background-color: #e4e863;
+    color: black;
+}
+
+fieldset {
+    accent-color: #9393eb;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul img {
+    width: 200px;
+    box-shadow: 0.5px 0.5px 5px grey;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem 2rem;
+}
+
+div.products {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 80%;
+}
+
+div.products button {
+    border: 0;
+    background-color: #6363e8;
+    color: white;
+    padding: 0.5rem;
+    font-family: cambria;
+    transition: 1s all ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+    color: #9393eb;
+    opacity: 80%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+section div {
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0.5px 0.5px 5px grey;
+    color: #6363e8;
+}
+
+section div:hover {
+    background-color: #6363e8;
+    color: white;
+}
+
+section div:nth-child(2) {
+    background-color: #6363e8;
+    color: black;
+}
+
+.fa-solid {
+    font-size: 0.6rem;
+}
+
+div[data-status="disabled"] {
+    background-color: rgb(213, 213, 213);
+    color: grey;
+    cursor: not-allowed;
+}
+
+div[data-status="disabled"]:hover {
+    color: grey;
+    background-color: lightgrey;
+}

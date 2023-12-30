@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Merriweather:wght@700&family=Montserrat&family=Poppins:wght@300&family=Varela+Round&display=swap');
+
+
+.auto-height-iframe {
+    border: none;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.main-font {
+    font-family: cambria;
+}
+
+.secondary-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-bg-color {
+    background-color: #9393eb;
+} 
+
+.secondary-bg-color {
+    background-color: #6363e8;
+}
+
+.main-text-color {
+    color: #3030a5;
+}
+
+.secondary-text-color {
+    color: rgb(255, 255, 181);
+}
+
+.tert-text-color {
+    color: #9393eb;
+}

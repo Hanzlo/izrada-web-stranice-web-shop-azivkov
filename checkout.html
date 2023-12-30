@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaćanje - Pet Paradise</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="js/javascript.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <iframe src="partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+    </header>
+    <main>
+        <h1 class="main-font main-text-color">Plaćanje</h1>
+        <div class="container">
+            <div class="placanje">
+                <form>
+                    <legend class="secondary-font main-text-color">Adresa dostave</legend>
+                    <label for="ime">Ime i prezime: <br>
+                        <input type="text" id="ime" name="ime" required></label><br><br>
+                    <label for="adresa">Kućna adresa: <br>
+                        <input type="text" id="adresa" name="adresa" required> </label><br><br>
+                    <label for="grad">Grad: <br>
+                        <input type="text" id="grad" name="grad" required> </label><br><br>
+                    <label for="postbroj">Poštanski broj: <br>
+                        <input type="number" id="postbroj" name="postbroj" required> </label><br><br>
+                    <label for="drzava">Država: <br>
+                        <input type="text" id="drzava" name="drzava" required> </label><br><br>
+                    <label for="telefon">Telefon: <br>
+                        <input type="phone" id="telefon" name="telefon" required></label><br><br>
+
+                    <label for="instrukcije">Instrukcije za dostavu:<br>
+                        <textarea rows="5" cols="60" maxlength="400"
+                            placeholder="Možete unijeti najviše 400 znakova"></textarea></label>
+
+                    <legend class="secondary-font main-text-color">Način plaćanja:</legend>
+                    <input type="radio" id="kartica" name="placanje" value="kartica"><label for="kartica">Kreditna
+                        kartica</label><br>
+                    <input type="radio" id="paypal" name="placanje" value="paypal"><label
+                        for="paypal">Paypal</label><br>
+                    <input type="radio" id="virman" name="placanje" value="virman"><label for="virman">Virmansko
+                        plaćanje</label><br>
+                    <input type="radio" id="pouzece" name="placanje" value="pouzece"><label for="pouzece">Plaćanje
+                        pouzećem</label><br><br>
+
+                    <label for="privola"><input type="checkbox" id="privola" name="privola" value="yes"
+                            required><span class="privola">Prihvaćam prikupljanje i obradu osobnih podataka danih u
+                            obrascu bez kojih moj zahtjev ne može biti ispunjen, te da me Pet Paradise kontaktira u
+                            svrhu slanja obavijesti.</span></label><br><br>
+                    <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"
+                            value="newsletter"><span class="newsletter">Prijavi me na
+                            Newsletter</span></label><br><br>
+
+                    <button type="submit">Naruči!</button>
+                </form>
+            </div>
+            <div class="kosarica">
+                <h2 class="secondary-font main-text-color">Pregled košarice</h2>
+
+                <table>
+                    <tr>
+                        <th>Naziv proizvoda</th>
+                        <th>Cijena</th>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/tx9264.jpg"> Adventski kalendar za mačke</td>
+                        <td class="total2">6,30 € / 47,47 kn</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="images/tx92549_trixie_bo_i_ma_ka_igra_ka_lopta_sa_zve_kom_fi-4_cm_3_komada.jpg">
+                            Trixie igračka za mačke</td>
+                        <td class="total2">1,86 € / 14,01 kn</td>
+                    </tr>
+
+                    <tr>
+                        <td class="total">Ukupno:</td>
+                        <td class="total2">8,16 € / 61,48 kn</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <iframe src="partials/footer.html" width="100%" class="auto-height-iframe"></iframe>
+    </footer>
+</body>
+
+</html>

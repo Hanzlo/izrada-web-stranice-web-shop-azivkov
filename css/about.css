@@ -1,0 +1,134 @@
+
+main {
+    position: relative;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 2px grey;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    top: 3%;
+    left: 40%;
+    transition: 0.5s all linear;
+}
+
+h1:hover {
+    letter-spacing: 1rem;
+}
+
+div.about {
+    width: 75vw;
+    margin: 0 auto;
+    font-family: 'Catamaran', serif;
+}
+
+img.banner {
+    position: relative;
+    top: -4.5px;
+    max-width: 100%;
+}
+
+div.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.about2 {
+    background-color: #6363e82c;
+    transition: 1s all ease-in-out;
+}
+
+div.about2:hover {
+    background-color: rgba(255, 255, 183, 0.218);
+}
+
+div.about3 {
+    background-color: #9393eb62;
+    transition: 1s all ease-out;
+}
+
+div.about3:hover {
+    background-color: rgba(255, 255, 144, 0.308);
+}
+
+span {
+    font-weight: 800;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+.img1, .img2 {
+    width: 230px;
+    transition: 1s all linear;
+}
+
+.img1:hover, .img2:hover {
+    transform: scale(1.2);
+}
+
+.img1 {
+    float: right;
+    padding: 0.5rem;
+}
+
+.img2 {
+    float: left;
+    padding: 0.5rem;
+}
+
+div.about2 p:nth-child(5) {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+div.about3 p:nth-child(4) {
+    padding-bottom: 1rem;
+}
+
+div.blog {
+    padding: 0 5rem 2rem 2rem;
+    width:25%;
+}
+
+div.blog img {
+    width: 50%;
+    float: left;
+    padding-right: 1rem;
+}
+
+div.blog a {
+    color: #9393eb;
+}
+
+div.blog a:hover {
+    color: black;
+}
+
+div.blog div {
+    padding-bottom: 1rem;
+    box-shadow: 0.5px 0.5px 5px grey;
+    background-color: white;
+    transition: 1.5s all linear;
+}
+
+div.blog div:hover {
+    transform: scale(1.1);
+}
+
+div.about {
+    width: 75%;
+    margin-right: 2rem;
+}
+
+p {
+    padding: 0.8rem;
+}
+
+

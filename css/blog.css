@@ -1,0 +1,153 @@
+body {
+    background-image: url(../images/output-onlinepngtools2.png);
+}
+
+div.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.blog {
+    width: 75%;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px grey;
+    transition: 1s all ease-out;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h1:hover {
+    letter-spacing: 1rem;
+}
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+article a {
+    text-decoration: none;
+    color: #9393eb;
+    font-size: 1.1rem;
+}
+
+article a:hover {
+    color: black;
+}
+
+article {
+    padding: 1rem;
+    box-shadow: 0.5px 0.5px 5px grey;
+    background-color: white;
+    margin-bottom: 1rem;
+    transition: 1.5s all linear;
+    background-color: white;
+}
+
+div.newsletter {
+    width: 35%;
+    margin-left: 3rem;
+    font-size: 1.1rem;
+    box-shadow: 0.5px 0.5px 5px grey;
+    background-color: white;
+    align-self: flex-start;
+    padding: 0.5rem 1.5rem;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+}
+
+div.newsletter input {
+    border: 2px solid #6363e8;
+    border-radius: 5px;
+    padding: 0.3rem 2rem 0.3rem 0.3rem;
+    margin-right: 0.5rem;
+    font-family: cambria;
+    font-size: 1rem;
+    background-color: white;
+}
+
+div.newsletter form {
+    padding-bottom: 2rem;
+}
+
+div.newsletter button {
+    border: 0;
+    border-radius: 10px;
+    padding: 0.3rem;
+    background-color: #9393eb;
+    color: yellow;
+    font-family: cambria;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+div.newsletter button::before {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+div.newsletter button:hover::before {
+    visibility: visible;
+}
+
+span.privola {
+    font-size: 0.8rem;
+}
+
+section {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+section div {
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0.5px 0.5px 5px grey;
+    color: #6363e8;
+}
+
+section div:hover {
+    background-color: #6363e8;
+    color: white;
+}
+
+section div:nth-child(2) {
+    background-color: #6363e8;
+    color: black;
+}
+
+.fa-solid {
+    font-size: 0.6rem;
+}
+
+div[data-status="disabled"] {
+    background-color: rgb(213, 213, 213);
+    color: grey;
+    cursor: not-allowed;
+}
+
+div[data-status="disabled"]:hover {
+    color: grey;
+    background-color: lightgrey;
+}
