@@ -65,6 +65,10 @@ input.search {
     font-family: cambria;
 }
 
+input.search:focus {
+    background-color: #e6e6fb;
+}
+
 a.mail, a.tel {
     text-decoration: none;
     color: black;

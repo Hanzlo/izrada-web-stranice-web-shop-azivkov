@@ -82,6 +82,10 @@ div.newsletter input {
     background-color: white;
 }
 
+div.newsletter input:focus {
+    background-color: #e6e6fb;
+}
+
 div.newsletter form {
     padding-bottom: 2rem;
 }

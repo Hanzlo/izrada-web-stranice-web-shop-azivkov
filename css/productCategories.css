@@ -3,11 +3,15 @@ body {
 }
 
 h1 {
-    text-align: center;
+    width: max-content;
+    margin: 1rem auto;
     font-size: 3.5rem;
-    text-shadow: 5px 5px 5px grey;
+    text-shadow: 2px 2px 5px grey;
     transition: 0.5s all linear;
-    background-color: rgb(255, 255, 194);
+    background-color: #fff479;
+    padding: 1rem 2rem;
+    border: 2px solid #9393eb;
+    border-radius: 10px;
 }
 
 h1:hover {
