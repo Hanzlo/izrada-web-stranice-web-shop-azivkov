@@ -27,7 +27,9 @@ div.container {
 
 div.zivotinje {
     text-align: center;
-    margin-right: 10rem;
+    margin-right: 8rem;
+    padding-right: 2rem;
+    align-self: flex-start;
 }
 
 li {
@@ -75,6 +77,12 @@ div.kategorije ul {
 
 div.kategorije li {
     padding: 1.5rem;
+}
+
+div.zivotinje, div.kategorije {
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+    margin-bottom: 1rem;
 }
 
 

@@ -33,6 +33,10 @@ div.aside {
     text-align: center;
     width: 20%;
     align-self: flex-start;
+    box-shadow: 0.2px 0.2px 5px grey;
+    margin: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 div.aside button {
@@ -53,6 +57,12 @@ div.aside button:hover, div.products button:hover {
 
 fieldset {
     accent-color: #9393eb;
+    transition: 0.5s all linear;
+    text-align: left;
+}
+
+fieldset:hover {
+    background-color: #feffdf;
 }
 
 ul {
@@ -74,6 +84,8 @@ div.products {
     text-align: center;
     font-size: 0.9rem;
     width: 80%;
+    box-shadow: 1px 1px 5px grey;
+    margin: 1rem;
 }
 
 div.products button {
