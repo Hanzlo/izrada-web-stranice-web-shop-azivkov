@@ -51,7 +51,7 @@ article {
     box-shadow: 0.5px 0.5px 5px grey;
     background-color: white;
     margin-bottom: 1rem;
-    transition: 1.5s all linear;
+    transition: 1s all linear;
     background-color: white;
 }
 
@@ -66,6 +66,10 @@ div.newsletter {
     text-align: justify;
     position: sticky;
     top: 0;
+}
+
+article:hover {
+    background-color: rgb(253, 253, 222);
 }
 
 div.newsletter input {
