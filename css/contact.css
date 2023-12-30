@@ -10,6 +10,8 @@ h1 {
     text-align: center;
     transition: 1s all linear;
     text-shadow: 2px 2px 2px grey;
+    font-family: 'Merriweather', sans-serif;
+
 }
 
 h1:hover {

@@ -16,6 +16,7 @@ h1 {
     top: 3%;
     left: 40%;
     transition: 0.5s all linear;
+    font-family: 'Merriweather', sans-serif;
 }
 
 h1:hover {

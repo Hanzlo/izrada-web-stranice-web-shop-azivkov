@@ -17,6 +17,7 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px 2px grey;
     transition: 1s all ease-out;
+    font-family: 'Merriweather', sans-serif;
 }
 
 h2 {
