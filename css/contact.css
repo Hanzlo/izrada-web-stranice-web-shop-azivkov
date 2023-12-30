@@ -72,3 +72,14 @@ button:hover {
     background-color: rgb(252, 252, 175);
     color: black;
 }
+
+div.form, div.contact {
+    box-shadow: 0.5px 0.5px 5px grey;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+
+div.contact {
+    align-self: flex-start;
+}

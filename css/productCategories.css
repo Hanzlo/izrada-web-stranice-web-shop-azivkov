@@ -7,6 +7,7 @@ h1 {
     font-size: 3.5rem;
     text-shadow: 5px 5px 5px grey;
     transition: 0.5s all linear;
+    background-color: rgb(255, 255, 194);
 }
 
 h1:hover {
@@ -71,6 +72,7 @@ div.kategorije ul {
 div.kategorije li {
     padding: 1.5rem;
 }
+
 
 @media screen and (max-width:768px) {
 
