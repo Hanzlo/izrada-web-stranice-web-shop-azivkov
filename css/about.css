@@ -10,11 +10,6 @@ h1 {
     text-align: center;
     font-size: 3.5rem;
     text-shadow: 3px 3px 2px grey;
-    margin: 0;
-    position: absolute;
-    z-index: 2;
-    top: 3%;
-    left: 40%;
     transition: 0.5s all linear;
     font-family: 'Merriweather', sans-serif;
 }
@@ -145,9 +140,6 @@ p {
 
 
 @media screen and (max-width: 1024px) {
-    img.banner {
-        display: none;
-    }
 
     h1 {
         position: relative;
