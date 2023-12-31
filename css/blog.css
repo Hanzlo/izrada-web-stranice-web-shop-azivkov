@@ -160,3 +160,30 @@ div[data-status="disabled"]:hover {
     color: grey;
     background-color: lightgrey;
 }
+
+@media screen and (max-width: 768px) {
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.newsletter {
+        order: 2;
+        width: 70%;
+    }
+
+    div.blog {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div.newsletter input {
+        padding-right: 0;
+        font-size: 0.8rem;
+    }
+
+    div.newsletter {
+        margin: 0;
+    }
+}

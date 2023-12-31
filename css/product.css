@@ -147,3 +147,41 @@ div[data-status="disabled"]:hover {
     color: grey;
     background-color: lightgrey;
 }
+
+@media screen and (max-width: 768px) {
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.aside {
+        order: 2;
+        width: 50%;
+    }
+
+    h1:hover {
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        padding: 1rem;
+    }
+
+    div.products {
+        box-shadow: none;
+    }
+
+    section {
+        font-size: 0.7rem;
+    }
+}

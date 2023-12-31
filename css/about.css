@@ -144,3 +144,35 @@ p {
 }
 
 
+@media screen and (max-width: 1024px) {
+    img.banner {
+        display: none;
+    }
+
+    h1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.moreblog {
+        order: 2;
+        width: 90%;
+        padding: 0;
+    }
+
+    div.about {
+        margin: 0;
+        width: 95%;
+        font-size: 1rem;
+    }
+
+}

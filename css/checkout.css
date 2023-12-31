@@ -82,3 +82,34 @@ td {
 span {
     font-size: 0.8rem;
 }
+
+@media screen and (max-width: 1024px) {
+    input {
+        padding: 0.5rem 3rem 0.5rem 0.5rem;
+    }
+
+    textarea {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.placanje {
+        width: 92%;
+    }
+
+    textarea {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    input {
+        padding: 0.5rem
+    }
+}

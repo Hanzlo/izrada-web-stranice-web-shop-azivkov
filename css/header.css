@@ -161,4 +161,23 @@ img.logo {
     section > div:nth-child(2) {
         justify-content: space-around;
     }
+
+
+    input.search {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    img.socmed, img.cart {
+        width: 20px;
+    }
+
+    .nav a {
+        font-size: 1rem;
+    }
+
+    input.search {
+        margin-left: 1rem;
+    }
 }

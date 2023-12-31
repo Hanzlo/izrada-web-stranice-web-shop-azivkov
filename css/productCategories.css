@@ -100,10 +100,46 @@ div.zivotinje, div.kategorije {
     }
 
     div.zivotinje {
-    order: 2;
+        order: 2;
    }
 
    div.kategorije img {
-    width: 200px;
+        width: 200px;
+    }
+
+    li {
+        padding: 5rem;
+    }
+    
+    h1:hover {
+        letter-spacing: 0;
+    }
 }
+
+@media screen and (max-width:650px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    div.zivotinje {
+        padding: 0;
+    }
+
+    div.zivotinje ul, div.kategorije ul {
+        padding: 0;
+    }
+
+    div.zivotinje li {
+        padding: 3rem;
+    }
+
+    img {
+        width: 100px;
+    }
 }
