@@ -1,7 +1,6 @@
 
 main {
     position: relative;
-    font-size: 1.2rem;
     text-align: justify;
     background-image: url(../images/output-onlinepngtools2.png);
 }
@@ -21,7 +20,6 @@ h1:hover {
 div.about {
     width: 75vw;
     margin: 0 auto;
-    font-family: 'Catamaran', serif;
 }
 
 img.banner {

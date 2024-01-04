@@ -118,6 +118,12 @@ img.logo {
     color:  #efefdd;
 }
 
+@media screen and (max-width: 1024px) {
+    .nav li {
+        padding: 0 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     section > div:first-child {
         justify-content: center;

@@ -36,10 +36,13 @@ legend,
 }
 
 input {
-    padding: 0.5rem 15rem 0.5rem 1rem;
+    padding: 0.5rem 0rem 0.5rem 1rem;
     border-radius: 5px;
     border: 1px solid #6363e8;
+}
 
+input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter) {
+    width: 30vw;
 }
 
 textarea {
@@ -47,6 +50,7 @@ textarea {
     font-family: 'Poppins', serif;
     border-radius: 5px;
     border: 1px solid #6363e8;
+    width: 30vw;
 }
 
 
@@ -83,15 +87,6 @@ span {
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 1024px) {
-    input {
-        padding: 0.5rem 3rem 0.5rem 0.5rem;
-    }
-
-    textarea {
-        width: 20vw;
-    }
-}
 
 @media screen and (max-width: 650px) {
     div.container {
@@ -104,6 +99,10 @@ span {
     }
 
     textarea {
+        width: 50vw;
+    }
+
+    input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter) {
         width: 50vw;
     }
 }
