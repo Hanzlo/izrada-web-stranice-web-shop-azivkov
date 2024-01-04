@@ -33,9 +33,14 @@ div.container {
     justify-content: space-around;
 }
 
+div.about1, div.about4 {
+    padding: 1rem;
+}
+
 div.about2 {
     background-color: #eaeaff;
     transition: 1s all ease-in-out;
+    padding: 1rem;
 }
 
 div.about2:hover {
@@ -45,6 +50,7 @@ div.about2:hover {
 div.about3 {
     background-color: #ddddff;
     transition: 1s all ease-out;
+    padding: 1rem;
 }
 
 div.about3:hover {
