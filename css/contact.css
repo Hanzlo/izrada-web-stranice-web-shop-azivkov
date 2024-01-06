@@ -41,12 +41,14 @@ div.contact span {
 }
 
 input {
-    padding: 0.2rem 7rem 0.2rem 0rem;
+    padding: 0.5rem 7rem 0.5rem 0.5rem;
+    margin-top: 0.5rem;
 }
 
 textarea {
     font-family: cambria;
     font-size: 1.3rem;
+    margin-top: 0.5rem;
 }
 
 input, textarea {

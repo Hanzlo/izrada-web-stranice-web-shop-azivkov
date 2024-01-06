@@ -30,11 +30,38 @@ div:first-child > div {
     padding: 0.5em 1em;
 }
 
-img.socmed, img.cart {
-    width: 30px;
+.fa-brands, .fa-solid {
+    font-size: 1.5rem;
     padding: 0 1rem;
-    transition: 0.5s all linear;
+    transition: 1s all ease-out;
+    color: rgb(37, 37, 37);
 }
+
+.fa-solid:hover {
+    color: #ebcb62;
+}
+
+
+.fa-facebook:hover {
+    color: darkblue;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-tiktok:hover {
+    color: palevioletred;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
 
 img.search {
     width: 20px;
@@ -43,7 +70,13 @@ img.search {
 button.search {
     border: 0px;
     background-color: #6363e8;
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-magnifying-glass {
+    padding-left: 0.3rem;
+    font-size: 1.2rem;
 }
 
 .socmed ul {
