@@ -1,8 +1,11 @@
 
+body {
+    background-image: url(../images/output-onlinepngtools3.png);
+}
+
 main {
     position: relative;
     text-align: justify;
-    background-image: url(../images/output-onlinepngtools3.png);
 }
 
 h1 {

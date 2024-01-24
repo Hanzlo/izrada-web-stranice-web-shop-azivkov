@@ -1,6 +1,8 @@
+body {
+    background-image: url(../images/output-onlinepngtools3.png);
+}
 
 main {
-    background-image: url(../images/output-onlinepngtools3.png);
     font-family: cambria;
     font-size: 1.3rem;
 }
@@ -23,12 +25,12 @@ div.container {
     justify-content: space-around;
 }
 
-img {
+.contact img {
     max-width: 500px;
     transition: 1s all ease-in;
 }
 
-img:hover {
+.contact img:hover {
     transform: scale(1.5);
 }
 
@@ -40,7 +42,7 @@ div.contact span {
     font-weight: 800;
 }
 
-input {
+.form input {
     padding: 0.5rem 7rem 0.5rem 0.5rem;
     margin-top: 0.5rem;
 }
@@ -51,12 +53,12 @@ textarea {
     margin-top: 0.5rem;
 }
 
-input, textarea {
+.form input, textarea {
     border: 1px solid grey;
     border-radius: 5px;
 }
 
-input:focus, textarea:focus {
+.form input:focus, textarea:focus {
     background-color: #e6e6fb;
 }
 
