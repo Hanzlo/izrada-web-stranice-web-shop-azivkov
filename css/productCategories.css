@@ -114,7 +114,7 @@ div.zivotinje, div.kategorije {
     }
 
     .kategorije ul li {
-        padding: 5rem;
+        padding: 1.5rem;
     }
     
     h1:hover {
@@ -142,7 +142,7 @@ div.zivotinje, div.kategorije {
     }
 
     div.zivotinje li {
-        padding: 3rem;
+        padding: 1.5rem;
     }
 
     div.zivotinje img, div.kategorije img {
