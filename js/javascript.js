@@ -1,14 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function adjustIframeHeight(iframe) {
-        iframe.onload = function () {
-            var frameContent = iframe.contentDocument || iframe.contentWindow.document;
-            var object = frameContent.querySelector("object");
-            var frameBody = frameContent.querySelector("body");
-            var height = object.offsetHeight;
-            frameBody.style.margin = 0;
-            iframe.style.height = height + 'px';
-        };
+function ucitajHeader() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("header").innerHTML = this.responseText;
     }
-    var iframes = document.querySelectorAll('.auto-height-iframe');
-    iframes.forEach(adjustIframeHeight);
-});
+    xhttp.open("GET", "partials/header.html");
+    xhttp.send();
+}
+
+function ucitajFooter() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("footer").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "partials/footer.html");
+    xhttp.send();
+}
+
+
+ucitajHeader();
+
+ucitajFooter();

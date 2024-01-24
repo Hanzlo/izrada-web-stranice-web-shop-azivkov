@@ -2,7 +2,7 @@
 main {
     padding: 1rem;
     position: relative;
-    background-image: url(../images/output-onlinepngtools2.png);
+    background-image: url(../images/output-onlinepngtools3.png);
     font-family: 'Catamaran', sans-serif;
     font-weight: 500;
 }
@@ -37,7 +37,7 @@ img {
     padding: 1rem;
 }
 
-button {
+.checkbutton {
     border: 0;
     padding: 1rem;
     font-size: 1rem;
@@ -52,13 +52,13 @@ button {
     left: 50%;
 }
 
-button:hover {
+.checkbutton:hover {
     background-color: rgb(252, 252, 175);
     color: black;
 }
 
 @media screen and (max-width: 700px) {
-    button {
+    .checkbutton {
         position: relative;
         top: 0;
         left: 0;

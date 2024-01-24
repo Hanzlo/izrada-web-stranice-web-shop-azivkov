@@ -1,6 +1,6 @@
 
 main {
-    background-image: url(../images/output-onlinepngtools2.png);
+    background-image: url(../images/output-onlinepngtools3.png);
 }
 
 h1 {
@@ -67,17 +67,17 @@ fieldset:hover {
     background-color: #feffdf;
 }
 
-ul {
+.products ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-ul img {
+.products ul img {
     width: 200px;
     box-shadow: 0.5px 0.5px 5px grey;
 }
 
-li {
+.products ul li {
     list-style-type: none;
     padding: 1rem 2rem;
 }
@@ -110,30 +110,30 @@ a:hover {
     opacity: 80%;
 }
 
-section {
+.nextpage {
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
 }
 
-section div {
+.nextpage div {
     padding: 15px;
     margin: 15px;
     box-shadow: 0.5px 0.5px 5px grey;
     color: #6363e8;
 }
 
-section div:hover {
+.nextpage div:hover {
     background-color: #6363e8;
     color: white;
 }
 
-section div:nth-child(2) {
+.nextpage div:nth-child(2) {
     background-color: #6363e8;
     color: black;
 }
 
-.fa-solid {
+.nextpage .fa-solid {
     font-size: 0.6rem;
 }
 
@@ -181,7 +181,7 @@ div[data-status="disabled"]:hover {
         box-shadow: none;
     }
 
-    section {
+    .nextpage {
         font-size: 0.7rem;
     }
 }

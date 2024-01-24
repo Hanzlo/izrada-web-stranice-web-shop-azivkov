@@ -1,6 +1,6 @@
 main {
     text-align: justify;
-    background-image: url(../images/output-onlinepngtools2.png);
+    background-image: url(../images/output-onlinepngtools3.png);
 }
 
 h1 {
@@ -11,11 +11,8 @@ h1 {
     font-family: 'Merriweather', sans-serif;
 }
 
-h1:hover {
-    letter-spacing: 1rem;
-}
-
 div.container {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-around;
 }

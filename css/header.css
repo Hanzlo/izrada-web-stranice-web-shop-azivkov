@@ -2,23 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
 
 body {
     margin: 0 auto;
 }
 
-section {
-    font-family: cambria;
-    width: 100vw;
+.wholeheader {
+    font-family: 'Varela Round', sans-serif;
     flex: 1 1 auto;
 }
 
-section > div {
+.wholeheader > div {
     padding: 0;
     margin: 0;
 }
 
-section > div:first-child {
+.firstrow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -26,7 +28,7 @@ section > div:first-child {
     background-color: #6363e8;
 }
 
-div:first-child > div {
+.firstrow > div {
     padding: 0.5em 1em;
 }
 
@@ -62,7 +64,7 @@ div:first-child > div {
     color: #FF0000;
 }
 
-button.search {
+button.searchsite {
     border: 0px;
     background-color: #6363e8;
     padding: 0;
@@ -85,7 +87,7 @@ button.search {
     list-style-type: none;
 }
 
-input.search {
+input.searchsite {
     padding: 0.3rem 4rem 0.3rem 0.3rem;
     background-color: #f6f2e8;
     border: none;
@@ -93,7 +95,7 @@ input.search {
     font-family: cambria;
 }
 
-input.search:focus {
+input.searchsite:focus {
     background-color: #e6e6fb;
 }
 
@@ -107,7 +109,7 @@ a.mail:hover, a.tel:hover {
     color: #efefdd;
 }
 
-section > div:nth-child(2) {
+.secondrow {
     display: flex;
     align-items: center;
     background-color: #9393eb;
@@ -146,14 +148,15 @@ img.logo {
     color:  #efefdd;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .nav li {
-        padding: 0 2rem;
+        padding: 0.5rem 2rem;
     }
+
 }
 
 @media screen and (max-width: 768px) {
-    section > div:first-child {
+    .firstrow {
         justify-content: center;
     }
 
@@ -161,11 +164,11 @@ img.logo {
         display: none;
     }
 
-    input.search {
+    input.searchsite {
         padding: 0.3rem; 
     }
 
-    section > div:nth-child(2) {
+    .secondrow {
         display: flex;
     }
 
@@ -192,12 +195,12 @@ img.logo {
         padding: 0.3rem 0;
     }
 
-    section > div:nth-child(2) {
+    .secondrow {
         justify-content: space-around;
     }
 
 
-    input.search {
+    input.searchsite {
         margin-left: 4rem;
     }
 }
@@ -211,7 +214,7 @@ img.logo {
         font-size: 1rem;
     }
 
-    input.search {
+    input.searchsite {
         margin-left: 1rem;
     }
 }

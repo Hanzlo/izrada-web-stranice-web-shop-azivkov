@@ -2,43 +2,35 @@ body {
     margin: 0;
 }
 
-section {
+.wholefooter {
     background-color: rgb(180, 178, 178);
-    font-family: cambria;
+    font-family: 'Montserrat', sans-serif;
 }
 
-div.row1 {
+.footerrow1 {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-div.row2 {
+.footerrow2 {
     text-align: right;
     font-size: 0.8rem;
     padding: 0.5rem;
 }
 
-h3 {
-    font-family: 'Poppins', sans-serif;
-}
-
 .mapa a {
     text-decoration: none;
-    color: #6363e8;
+    color: #2626e2;
 }
 
 .mapa a:hover {
     color: white;
 }
 
-ul {
+.kontakt ul {
     padding: 0;
-}
-
-li {
-    list-style-type: none;
 }
 
 div.lokacija {
@@ -47,6 +39,7 @@ div.lokacija {
 
 .kontakt li {
     padding: 0.3rem 0;
+    list-style-type: none;
 }
 
 iframe {

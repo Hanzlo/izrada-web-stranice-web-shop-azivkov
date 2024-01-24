@@ -1,5 +1,5 @@
-main {
-    background-image: url(../images/output-onlinepngtools2.png);
+body {
+    background-image: url(../images/output-onlinepngtools3.png);
 }
 
 div.container {
@@ -122,31 +122,31 @@ span.privola {
     font-size: 0.8rem;
 }
 
-section {
+.nextpage {
     display: flex;
     width: 70%;
     justify-content: center;
     font-size: 1rem;
 }
 
-section div {
+.nextpage div {
     padding: 15px;
     margin: 15px;
     box-shadow: 0.5px 0.5px 5px grey;
     color: #6363e8;
 }
 
-section div:hover {
+.nextpage div:hover {
     background-color: #6363e8;
     color: white;
 }
 
-section div:nth-child(2) {
+.nextpage div:nth-child(2) {
     background-color: #6363e8;
     color: black;
 }
 
-.fa-solid {
+.nextpage .fa-solid {
     font-size: 0.6rem;
 }
 

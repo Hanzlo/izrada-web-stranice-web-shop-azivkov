@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/output-onlinepngtools2.png);
+    background-image: url(../images/output-onlinepngtools3.png);
 }
 
 h1 {
@@ -64,8 +64,14 @@ div.zivotinje img:hover {
 }
 
 div.kategorije img {
+    border-radius: 50%;
+    transition: 1s all linear;
     width: 300px;
     box-shadow: 0.5px 0.5px 5px grey;
+}
+
+div.kategorije img:hover {
+    border-radius: 0;
 }
 
 div.kategorije h2 {
@@ -107,7 +113,7 @@ div.zivotinje, div.kategorije {
         width: 200px;
     }
 
-    li {
+    .kategorije ul li {
         padding: 5rem;
     }
     
@@ -139,7 +145,7 @@ div.zivotinje, div.kategorije {
         padding: 3rem;
     }
 
-    img {
+    div.zivotinje img, div.kategorije img {
         width: 100px;
     }
 }

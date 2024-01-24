@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/output-onlinepngtools2.png);
+    background-image: url(../images/output-onlinepngtools3.png);
 }
 
 img {
@@ -10,7 +10,6 @@ img {
 
 div.container1 {
     position: relative;
-    top: -5px;
 }
 
 div.container1 h1 {
@@ -46,7 +45,7 @@ div.ljubimci {
     text-align: center;
 }
 
-li {
+.katljubimci li, .igracke li {
     list-style-type: none;
     display: inline-block;
     padding: 0 0.5rem;

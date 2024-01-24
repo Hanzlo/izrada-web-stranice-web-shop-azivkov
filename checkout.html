@@ -8,25 +8,25 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/footer.css">
+
     <link rel="stylesheet" href="css/checkout.css">
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 
 <body>
-    <header>
-        <iframe src="partials/header.html" width="100%" class="auto-height-iframe"></iframe>
-    </header>
+    <header id="header"></header>
     <main>
         <h1 class="secondary-font main-text-color">Plaćanje</h1>
         <div class="container">
             <div class="placanje">
-                <form>
+                <form class="payform">
                     <legend class="secondary-font main-text-color">Adresa dostave</legend>
                     <label for="ime">Ime i prezime: <br>
                         <input type="text" id="ime" name="ime" required></label><br><br>
@@ -43,7 +43,7 @@
 
                     <label for="instrukcije">Instrukcije za dostavu:<br>
                         <textarea rows="5" cols="30" maxlength="400"
-                            placeholder="Možete unijeti najviše 400 znakova"></textarea></label>
+                            placeholder="Možete unijeti najviše 400 znakova" id="instrukcije"></textarea></label>
 
                     <legend class="secondary-font main-text-color">Način plaćanja:</legend>
                     <input type="radio" id="kartica" name="placanje" value="kartica"><label for="kartica">Kreditna
@@ -63,7 +63,7 @@
                             value="newsletter"><span class="newsletter">Prijavi me na
                             Newsletter</span></label><br><br>
 
-                    <button type="submit">Naruči!</button>
+                    <button type="submit" class="paybutton">Naruči!</button>
                 </form>
             </div>
             <div class="kosarica">
@@ -95,9 +95,9 @@
             </div>
         </div>
     </main>
-    <footer>
-        <iframe src="partials/footer.html" width="100%" class="auto-height-iframe"></iframe>
-    </footer>
+    <footer id="footer"></footer>
+
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>

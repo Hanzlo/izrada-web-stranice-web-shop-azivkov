@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/output-onlinepngtools2.png);
+    background-image: url(../images/output-onlinepngtools3.png);
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1:hover {
 
 main {
     width: 70vw;
-    margin: 0 auto;
+    margin: 1rem auto;
     background-color: white;
     font-family: 'Catamaran', sans-serif;
     font-size: 1.2rem;

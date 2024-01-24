@@ -1,6 +1,6 @@
 
 main {
-    background-image: url(../images/output-onlinepngtools2.png);
+    background-image: url(../images/output-onlinepngtools3.png);
     font-family: cambria;
     font-size: 1.3rem;
 }
@@ -88,47 +88,70 @@ div.contact {
     align-self: flex-start;
 }
 
+.contactsocial {
+    display: flex;
+}
+
+.contactsocial li {
+    list-style-type: none;
+    margin: 1rem 0.8rem 0;
+}
+
 @media screen and (max-width: 1024px) {
     div.container {
         font-size: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     img {
         width: 400px;
     }
-}
 
-@media screen and (max-width: 900px) {
-    div.container {
-        display: flex;
-        flex-direction: column;
+    div.form {
+        order: 2;
+        width: 50%;
+        margin: 0 auto;
     }
 
     div.contact {
         order: 1;
-        margin-left: 1rem;
-    }
-
-    div.form {
-        order: 2;
-        width: 70%;
-        margin-left: 1rem;
-    }
-
-    img {
-        max-width: 100%;
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
+
+    .contact img {
+        width: 50vw;
+    }
+
     textarea {
-        width: 300px;
+        width: 50vw;
     }
 
-    div.contact {
-        width: 60%;
+    .form input {
+        width: 100px;
+    }
+
+    .contactsocial {
+        padding: 0;
+    }
+
+    .contactsocial li {
+        margin: 0 0;
     }
 }
+
+
+@media screen and (max-width: 500px) {
+    .contactsocial {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 @media screen and (max-width: 320px) {
     h1 {

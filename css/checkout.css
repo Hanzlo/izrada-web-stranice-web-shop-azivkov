@@ -2,6 +2,7 @@ main {
     width: 65vw;
     margin: 0 auto;
     font-family: 'Catamaran', serif;
+    margin-bottom: 1rem;
 }
 
 div.container {
@@ -17,7 +18,7 @@ div.placanje {
     width: 50%;
 }
 
-img {
+table img {
     width: 60px;
     float: left;
 }
@@ -35,13 +36,13 @@ legend,
     padding-left: 1rem;
 }
 
-input {
-    padding: 0.5rem 0rem 0.5rem 1rem;
+.payform input {
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
     border-radius: 5px;
     border: 1px solid #6363e8;
 }
 
-input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter) {
+.payform input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter, .searchsite) {
     width: 30vw;
 }
 
@@ -51,10 +52,11 @@ textarea {
     border-radius: 5px;
     border: 1px solid #6363e8;
     width: 30vw;
+    padding: 0.5rem;
 }
 
 
-button {
+.paybutton {
     border: 0;
     padding: 1rem;
     font-size: 1rem;
@@ -66,13 +68,9 @@ button {
     margin-bottom: 2rem;
 }
 
-button:hover {
+.paybutton:hover {
     background-color: rgb(252, 252, 175);
     color: black;
-}
-
-form {
-    padding: 1rem;
 }
 
 .total2 {
@@ -102,13 +100,13 @@ span {
         width: 50vw;
     }
 
-    input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter) {
+    .payform input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter) {
         width: 50vw;
     }
 }
 
 @media screen and (max-width: 320px) {
-    input {
+    .payform input {
         padding: 0.5rem
     }
 }
