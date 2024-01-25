@@ -1,23 +1,29 @@
 body {
-    background-image: url(../images/output-onlinepngtools3.png);
+    background-image: url(../images/output-onlinepngtools.png);
+    color: black;
 }
 
 main {
-    font-family: cambria;
-    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
 }
 
 h1 {
-    font-size: 3rem;   
-    text-align: center;
-    transition: 1s all linear;
-    text-shadow: 2px 2px 2px grey;
-    font-family: 'Merriweather', sans-serif;
-
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1:hover {
     letter-spacing: 1rem;
+    background-color: #d8f3ff;
 }
 
 div.container {
@@ -48,8 +54,8 @@ div.contact span {
 }
 
 textarea {
-    font-family: cambria;
-    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
 }
 
@@ -59,24 +65,23 @@ textarea {
 }
 
 .form input:focus, textarea:focus {
-    background-color: #e6e6fb;
+    background-color: #d8f3ff;
 }
 
 button {
     border: 0;
     padding: 0.5rem;
     font-size: 1rem;
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: white;
-    font-family: cambria;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     transition: 0.3s all ease;
     margin-bottom: 2rem;
 }
 
 button:hover {
-    background-color: rgb(252, 252, 175);
-    color: black;
+    background-color: black;
 }
 
 div.form, div.contact {
@@ -97,6 +102,10 @@ div.contact {
 .contactsocial li {
     list-style-type: none;
     margin: 1rem 0.8rem 0;
+}
+
+.contactsocial .fa-brands {
+    color: black;
 }
 
 @media screen and (max-width: 1024px) {
@@ -152,12 +161,16 @@ div.contact {
         display: flex;
         flex-direction: column;
     }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 
 
 @media screen and (max-width: 320px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     input {

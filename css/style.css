@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Merriweather:wght@700&family=Montserrat&family=Poppins:wght@300&family=Raleway&family=Roboto&family=Varela+Round&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .auto-height-iframe {
     border: none;
     width: 100%;
@@ -11,7 +13,7 @@ body {
 }
 
 .main-font {
-    font-family: cambria;
+    font-family: 'Roboto', sans-serif;
 }
 
 .secondary-font {
@@ -27,11 +29,11 @@ body {
 }
 
 .main-text-color {
-    color: #3030a5;
+    color: black;
 }
 
 .secondary-text-color {
-    color: rgb(255, 255, 181);
+    color: #00a3ec;
 }
 
 .tert-text-color {

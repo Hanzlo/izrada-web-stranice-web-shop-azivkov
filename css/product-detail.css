@@ -1,3 +1,7 @@
+main {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
 
 img {
     max-width: 100%;
@@ -9,7 +13,7 @@ div.back {
 
 div.back a {
     text-decoration: none;
-    color: #9393eb;
+    color: #00a3ec;
 }
 
 div.back a:hover {
@@ -23,6 +27,7 @@ div.container {
 
 h1 {
     font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 div.container p {
@@ -33,19 +38,22 @@ div.container p:nth-child(3) {
     font-weight: 800;
 }
 
+.fa-arrow-left {
+    color: black;
+}
+
 button {
     border: 0;
     padding: 1rem;
     font-size: 1rem;
-    background-color: #9393eb;
+    background-color: #00a3ec;
     color: white;
     transition: 0.3s all ease;
     margin-bottom: 2rem;
 }
 
 button:hover {
-    background-color: rgb(252, 252, 175);
-    color: black;
+    background-color: black;
 }
 
 .checked {

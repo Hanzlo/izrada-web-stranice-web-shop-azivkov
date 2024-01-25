@@ -1,15 +1,19 @@
+body {
+    background-image: url(../images/output-onlinepngtools.png);
+}
+
 main {
     width: 65vw;
     margin: 0 auto;
-    font-family: 'Catamaran', serif;
+    font-family: 'Catamaran', sans-serif;
     margin-bottom: 1rem;
 }
 
 div.container {
     display: flex;
     box-shadow: 0.5px 0.5px 5px grey;
-    justify-content: space-between;
     align-items: flex-start;
+    background-color: white;
 }
 
 div.placanje {
@@ -18,15 +22,31 @@ div.placanje {
     width: 50%;
 }
 
+.kosarica {
+    text-align: center;
+}
+
 table img {
     width: 60px;
     float: left;
 }
 
 h1 {
-    font-size: 3rem;
-    text-align: center;
-    font-family: 'Catamaran', sans-serif;
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1:hover {
+    letter-spacing: 1rem;
+    background-color: #d8f3ff;
 }
 
 legend,
@@ -36,10 +56,11 @@ legend,
     padding-left: 1rem;
 }
 
+
 .payform input {
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     border-radius: 5px;
-    border: 1px solid #6363e8;
+    border: 1px solid #00a3ec;
 }
 
 .payform input:not(#kartica, #paypal, #virman, #privola, #pouzece, #newsletter, .searchsite) {
@@ -50,9 +71,14 @@ textarea {
     margin-bottom: 2rem;
     font-family: 'Poppins', serif;
     border-radius: 5px;
-    border: 1px solid #6363e8;
+    border: 1px solid #00a3ec;
     width: 30vw;
     padding: 0.5rem;
+}
+
+.paymentbutton {
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -60,7 +86,7 @@ textarea {
     border: 0;
     padding: 1rem;
     font-size: 1rem;
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: white;
     font-family: cambria;
     font-size: 1.2rem;
@@ -69,12 +95,15 @@ textarea {
 }
 
 .paybutton:hover {
-    background-color: rgb(252, 252, 175);
-    color: black;
+    background-color: black;
 }
 
 .total2 {
     font-weight: 800;
+}
+
+table {
+    width: 30vw;
 }
 
 td {

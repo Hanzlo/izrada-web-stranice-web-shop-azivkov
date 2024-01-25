@@ -1,5 +1,6 @@
 body {
-    background-image: url(../images/output-onlinepngtools3.png);
+    background-image: url(../images/output-onlinepngtools.png);
+    color: black;
 }
 
 div.container {
@@ -13,19 +14,29 @@ div.blog {
 }
 
 h1 {
-    font-size: 3rem;
-    text-align: center;
-    text-shadow: 2px 2px 2px grey;
-    transition: 1s all ease-out;
-    font-family: 'Merriweather', sans-serif;
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1:hover {
+    letter-spacing: 1rem;
+    background-color: #d8f3ff;
 }
 
 h2 {
     font-size: 2.2rem;
 }
 
-h1:hover {
-    letter-spacing: 1rem;
+h3 {
+    font-size: 1.5rem;
 }
 
 main {
@@ -39,8 +50,9 @@ img {
 
 article a {
     text-decoration: none;
-    color: #9393eb;
-    font-size: 1.1rem;
+    color: #00a3ec;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 article a:hover {
@@ -59,7 +71,7 @@ article {
 div.newsletter {
     width: 35%;
     margin-left: 3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     box-shadow: 0.5px 0.5px 5px grey;
     background-color: white;
     align-self: flex-start;
@@ -70,11 +82,11 @@ div.newsletter {
 }
 
 article:hover {
-    background-color: rgb(253, 253, 222);
+    background-color: #e9f8ff;
 }
 
 div.newsletter input {
-    border: 2px solid #6363e8;
+    border: 2px solid #00a3ec;
     border-radius: 5px;
     padding: 0.3rem 2rem 0.3rem 0.3rem;
     margin-right: 0.5rem;
@@ -84,7 +96,7 @@ div.newsletter input {
 }
 
 div.newsletter input:focus {
-    background-color: #e6e6fb;
+    background-color: #e9f8ff;
 }
 
 div.newsletter form {
@@ -95,8 +107,8 @@ div.newsletter button {
     border: 0;
     border-radius: 10px;
     padding: 0.3rem;
-    background-color: #9393eb;
-    color: yellow;
+    background-color: #00a3ec;
+    color: white;
     font-family: cambria;
     font-size: 1.1rem;
     position: relative;
@@ -109,7 +121,7 @@ div.newsletter button::before {
     height: 100%;
     top: 0;
     right: 0;
-    background-color: yellow;
+    background-color: #00a3ec;
     visibility: hidden;
     border-radius: 10px;
 }
@@ -133,21 +145,22 @@ span.privola {
     padding: 15px;
     margin: 15px;
     box-shadow: 0.5px 0.5px 5px grey;
-    color: #6363e8;
+    color: #00a3ec;
 }
 
 .nextpage div:hover {
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: white;
 }
 
 .nextpage div:nth-child(2) {
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: black;
 }
 
 .nextpage .fa-solid {
     font-size: 0.6rem;
+    color: black;
 }
 
 div[data-status="disabled"] {

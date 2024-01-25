@@ -1,14 +1,19 @@
 main {
     text-align: justify;
-    background-image: url(../images/output-onlinepngtools3.png);
+    background-image: url(../images/output-onlinepngtools.png);
+    color: black;
 }
 
 h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-shadow: 0.5px 0.5px 2px grey;
     transition: 0.5s all linear;
     font-family: 'Merriweather', sans-serif;
+}
+
+.fa-arrow-right {
+    color: black;
 }
 
 div.container {
@@ -29,7 +34,8 @@ div.moreblog img {
 }
 
 div.moreblog a {
-    color: #9393eb;
+    color: #00a3ec;
+    font-family: 'Roboto', sans-serif;
 }
 
 div.moreblog a:hover {
@@ -74,7 +80,7 @@ img {
 
 p.popis a {
     text-decoration: none;
-    color: #9393eb;
+    color: #00a3ec;
 }
 
 p.popis a:hover {

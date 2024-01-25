@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(../images/output-onlinepngtools3.png);
+    background-image: url(../images/output-onlinepngtools.png);
 }
 
 h1 {
@@ -11,14 +11,14 @@ h1 {
     transition: 0.5s all linear;
     background-color: white;
     padding: 1rem 2rem;
-    border: 2px solid #9393eb;
+    border: 2px solid #00a3ec;
     border-radius: 10px;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1:hover {
     letter-spacing: 1rem;
-    background-color: #fff8ab;
+    background-color: #d8f3ff;
 }
 
 div.container {
@@ -39,37 +39,43 @@ div.aside {
     margin: 1rem;
     position: sticky;
     top: 0;
+    color: black;
 }
 
 div.aside button {
     border: 0;
     padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
-    font-family: cambria;
+    font-family: 'Roboto', sans-serif;
     margin-top: 1rem;
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: white;
     transition: 0.3s all ease;
 }
 
 div.aside button:hover, div.products button:hover {
-    background-color: #e4e863;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 fieldset {
-    accent-color: #9393eb;
+    accent-color: #00a3ec;
     transition: 0.5s all linear;
     text-align: left;
 }
 
 fieldset:hover {
-    background-color: #feffdf;
+    background-color: #d8f3ff;
+}
+
+p {
+    color: black;
 }
 
 .products ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .products ul img {
@@ -92,10 +98,10 @@ div.products {
 
 div.products button {
     border: 0;
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: white;
     padding: 0.5rem;
-    font-family: cambria;
+    font-family: 'Roboto', sans-serif;
     transition: 1s all ease;
 }
 
@@ -124,17 +130,18 @@ a:hover {
 }
 
 .nextpage div:hover {
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: white;
 }
 
 .nextpage div:nth-child(2) {
-    background-color: #6363e8;
+    background-color: #00a3ec;
     color: black;
 }
 
 .nextpage .fa-solid {
     font-size: 0.6rem;
+    color: black;
 }
 
 div[data-status="disabled"] {

@@ -1,10 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/output-onlinepngtools3.png);
+    color: black;
+    background-image: url(../images/output-onlinepngtools.png);
+
 }
 
-img {
+.container1 img {
     width: 100%;
 }
 
@@ -19,35 +21,41 @@ div.container1 h1 {
     font-size: 6rem;
     text-align: center;
     position: absolute;
-    top: 0;
-    left: 8%;
+    top: 10%;
+    left: 20%;
     text-shadow: 5px 5px 5px grey;
+    color: white;
     transition: 2s all ease;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
 div.container1 h1:hover {
-    color: white;
+    color: #00a3ec;
     text-shadow: 2px 2px 2px black;
     letter-spacing: 0.2rem;
 }
 
-div.ljubimci h2,
+div.proizvodi h2,
 div.popularno h2 {
     font-size: 3rem;
     padding-left: 1rem;
     text-shadow: 2px 5px 5px grey;
 }
 
-div.ljubimci {
+div.proizvodi {
     padding-bottom: 2rem;
     text-align: center;
 }
 
-.katljubimci li, .igracke li {
+.katproizvodi, .popproizv {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.katproizvodi li, .popproizv li {
     list-style-type: none;
-    display: inline-block;
     padding: 0 0.5rem;
 }
 
@@ -66,14 +74,8 @@ li h3 {
     margin: 0;
 }
 
-.ljubimci img {
-    border-radius: 50%;
-    transition: 1s all linear;
+.proizvodi img {
     width: 250px;
-}
-
-.ljubimci img:hover {
-    border-radius: 0%;
 }
 
 div.popularno {
@@ -88,21 +90,21 @@ div.popularno img {
 
 div.popularno button {
     border: 0;
-    background-color: #6363e8;
+    background-color: black;
     color: white;
     padding: 0.5rem;
-    font-family: cambria;
+    font-family: 'Roboto', sans-serif;
 }
 
 div.popularno button:hover {
-    background-color: #9393eb;
+    background-color: #00a3ec;
     color: black;
 }
 
 div.container2 {
     display: flex;
     align-items: flex-start;
-    background-color: rgb(255, 255, 228);
+    background-color: #ececec;
 }
 
 div.blog {
@@ -111,13 +113,13 @@ div.blog {
 }
 
 div.blog img {
-    width: 50%;
+    width: 280px;
     float: left;
     padding-right: 1rem;
 }
 
 div.blog a {
-    color: #9393eb;
+    color: #00a3ec;
 }
 
 div.blog a:hover {
@@ -125,10 +127,17 @@ div.blog a:hover {
 }
 
 div.blog div {
-    padding-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    padding-top: 0.1rem;
+    margin-bottom: 0.5rem;
     box-shadow: 0.5px 0.5px 5px grey;
     background-color: white;
     transition: 1.5s all linear;
+}
+
+div.blog p {
+    padding: 0.3rem;
+    font-size: 0.9rem;
 }
 
 div.blog div:hover {
@@ -137,34 +146,31 @@ div.blog div:hover {
 
 div.newsletter {
     width: 50%;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    padding-right: 1rem;
 }
 
 div.newsletter input {
-    border: 2px solid #6363e8;
+    border: 2px solid #00a3ec;
     border-radius: 5px;
     padding: 0.3rem 2rem 0.3rem 0.3rem;
     margin-right: 0.5rem;
-    font-family: cambria;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     background-color: white;
 }
 
 div.newsletter input:focus {
-    background-color: #e6e6fb;
-}
-
-div.newsletter form {
-    padding-bottom: 2rem;
+    background-color: #d8f3ff;
 }
 
 div.newsletter button {
     border: 0;
     border-radius: 10px;
     padding: 0.3rem;
-    background-color: #9393eb;
-    color: yellow;
-    font-family: cambria;
+    background-color: #00a3ec;
+    color: white;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     position: relative;
 }
@@ -176,7 +182,8 @@ div.newsletter button::before {
     height: 100%;
     top: 0;
     right: 0;
-    background-color: yellow;
+    background-color: white;
+    color: black;
     visibility: hidden;
     border-radius: 10px;
 }
@@ -209,6 +216,10 @@ span.privola {
         font-size: 2rem;
         left: 30%;
     }
+
+    .katproizvodi, .popproizv {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -237,7 +248,7 @@ span.privola {
         left: 20%;
     }
 
-    div.ljubimci h2,
+    div.proizvodi h2,
     div.popularno h2 {
         font-size: 1rem;
         padding-left: 1rem;

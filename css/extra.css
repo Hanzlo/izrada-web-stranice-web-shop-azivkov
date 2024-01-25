@@ -1,23 +1,32 @@
 body {
-    background-image: url(../images/output-onlinepngtools3.png);
+    background-image: url(../images/output-onlinepngtools.png);
 }
 
+
 h1 {
-    font-size: 2rem;
-    text-shadow: 2px 2px 2px grey;
-    transition: 1s all linear;
-    text-align: center;
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px grey;
+    transition: 0.5s all linear;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 2px solid #00a3ec;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1:hover {
-    word-spacing: 1rem;
+    letter-spacing: 1rem;
+    background-color: #d8f3ff;
 }
 
+
 main {
-    width: 70vw;
+    width: 60vw;
     margin: 1rem auto;
     background-color: white;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     padding: 1rem;
     box-shadow: 0.5px 0.5px 5px grey;
@@ -25,5 +34,6 @@ main {
 
 span {
     font-weight: 800;
+    color: #00a3ec;
 }
 
