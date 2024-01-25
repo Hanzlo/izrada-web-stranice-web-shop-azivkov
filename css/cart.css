@@ -35,6 +35,10 @@ table, th, td {
     background-color: white;
 }
 
+td {
+    padding: 1rem;
+}
+
 table {
     width: 100%;
     margin-bottom: 5rem;
