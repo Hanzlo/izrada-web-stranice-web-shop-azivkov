@@ -49,23 +49,23 @@ div.about1, div.about4 {
 }
 
 div.about2 {
-    background-color: #ddf5ff;
+    background-color: #e9f8ff;
     transition: 1s all ease-in-out;
     padding: 1rem;
 }
 
 div.about2:hover {
-    background-color: #ececec;
+    background-color: #c8eeff;
 }
 
 div.about3 {
-    background-color: #e9f8ff;
+    background-color: #ececec;
     transition: 1s all ease-out;
     padding: 1rem;
 }
 
 div.about3:hover {
-    background-color: #dbdada;
+    background-color: #cecdcd;
 }
 
 span {
@@ -135,12 +135,12 @@ div.moreblog div {
     padding: 1rem;
     box-shadow: 0.5px 0.5px 5px grey;
     background-color: white;
-    transition: 1.5s all linear;
+    transition: 0.8s all linear;
     font-size: 1rem;
 }
 
 div.moreblog div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 div.about {

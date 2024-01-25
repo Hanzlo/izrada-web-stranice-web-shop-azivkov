@@ -46,11 +46,11 @@ div.moreblog div {
     padding: 1rem;
     box-shadow: 0.5px 0.5px 5px grey;
     background-color: white;
-    transition: 1.5s all linear;
+    transition: 0.8s all linear;
 }
 
 div.moreblog div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 div.mainblog {

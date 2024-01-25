@@ -132,7 +132,7 @@ div.blog div {
     margin-bottom: 0.5rem;
     box-shadow: 0.5px 0.5px 5px grey;
     background-color: white;
-    transition: 1.5s all linear;
+    transition: 0.8s all linear;
 }
 
 div.blog p {
@@ -141,7 +141,7 @@ div.blog p {
 }
 
 div.blog div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 div.newsletter {
