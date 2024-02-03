@@ -24,7 +24,7 @@ h1 {
 }
 
 h1:hover {
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     background-color: #d8f3ff;
 }
 
