@@ -71,24 +71,9 @@
 
                 <table>
                     <tr>
+                        <th></th>
                         <th>Naziv proizvoda</th>
                         <th>Cijena</th>
-                    </tr>
-
-                    <tr>
-                        <td><img src="images/sony-ps5-playstation-5-god-of-war-ragnar-173338_45104.png">Sony PlayStation 5</td>
-                        <td class="total2">559,99 €</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="images/dgb1t8y-1e29d951-e487-42a0-bf1f-4d2004728cfb.png">
-                            Baldur's Gate 3 za PS5</td>
-                        <td class="total2">59,99 €</td>
-                    </tr>
-
-                    <tr>
-                        <td class="total">Ukupno:</td>
-                        <td class="total2">619,98 €</td>
                     </tr>
                 </table>
 
@@ -98,6 +83,38 @@
     <footer id="footer"></footer>
 
     <script src="js/javascript.js"></script>
+
+    <script>
+        var cartItems = JSON.parse(localStorage.getItem("cart"));
+        var table = document.getElementsByTagName("table")[0];
+        var ukupnaCijena = 0;
+        var kolicina = 0;
+
+        if (cartItems && Array.isArray(cartItems) && cartItems.length > 0) {
+            for (var i = 0; i < cartItems.length; i++) {
+                var newRow = document.createElement("tr");
+                newRow.innerHTML = `<td><img src="${cartItems[i].image}" width="50"></td> <td>${cartItems[i].name}</td> <td>${parseFloat(cartItems[i].price).toFixed(2)} €</td>`;
+                table.appendChild(newRow);
+
+                ukupnaCijena += (parseFloat(cartItems[i].price) * cartItems[i].count);
+                kolicina += cartItems[i].count;
+            }
+        } else {
+            var emptyRow = document.createElement("tr");
+            emptyRow.innerHTML = "<td colspan='5'>Košarica je prazna!</td>";
+            table.appendChild(emptyRow);
+        }
+
+        var ukupno = document.createElement("tr");
+        ukupno.innerHTML = `<td></td><td><b>UKUPNO:</b> </td><td><b>${ukupnaCijena.toFixed(2)} €</b></td>`;
+        table.appendChild(ukupno);
+
+        function removeItem(index) {
+            cartItems.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cartItems));
+            location.reload();
+        }
+    </script>
 </body>
 
 </html>

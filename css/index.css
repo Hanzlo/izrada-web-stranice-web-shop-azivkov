@@ -2,11 +2,15 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    background-image: url(../images/output-onlinepngtools.png);
+    background-image: url(../images/vector3.png);
 
 }
 
 .container1 img {
+    width: 100%;
+}
+
+#video {
     width: 100%;
 }
 
@@ -18,25 +22,28 @@ div.container1 h1 {
     padding: 0.2rem 1rem 0.2rem 1rem;
     margin: 0;
     margin-top: 2rem;
-    font-size: 6rem;
+    font-size: 3rem;
     text-align: center;
     position: absolute;
     top: 12%;
-    left: 14%;
-    text-shadow: 5px 5px 2px grey;
-    color: white;
+    left: 10%;
+    text-shadow: 2px 2px 2px black;
+    color: #00a3ec;
     border: 1px solid grey;
     border-radius: 25px;
     background-color: rgba(203, 203, 203, 0.327);
-    transition: 2s all ease;
+    transition: opacity 1s ease, visibility 1s ease;
     font-family: 'Roboto', sans-serif;
-
+    visibility: hidden;
+    opacity: 0;
 }
 
-div.container1 h1:hover {
+div.container1:hover h1 {
+    visibility: visible;
+    opacity: 1;
+    left: 10%;
     color: #00a3ec;
     text-shadow: 2px 2px 2px black;
-    letter-spacing: 0.1rem;
 }
 
 div.proizvodi h2,
@@ -79,6 +86,8 @@ li h3 {
 
 .proizvodi img {
     width: 250px;
+    box-shadow: 0.5px 0.5px 5px grey;
+
 }
 
 div.popularno {
@@ -123,6 +132,7 @@ div.blog img {
 
 div.blog a {
     color: #00a3ec;
+    font-family: 'Robot', sans-serif;
 }
 
 div.blog a:hover {
@@ -132,15 +142,16 @@ div.blog a:hover {
 div.blog div {
     padding-bottom: 0.4rem;
     padding-top: 0.1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     box-shadow: 0.5px 0.5px 5px grey;
     background-color: white;
     transition: 0.8s all linear;
 }
 
 div.blog p {
-    padding: 0.3rem;
+    padding: 1rem;
     font-size: 0.9rem;
+    text-align: justify;
 }
 
 div.blog div:hover {
@@ -151,6 +162,7 @@ div.newsletter {
     width: 50%;
     font-size: 0.9rem;
     padding-right: 1rem;
+    text-align: justify;
 }
 
 div.newsletter input {
@@ -175,43 +187,27 @@ div.newsletter button {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
-    position: relative;
 }
 
-div.newsletter button::before {
-    position: absolute;
-    content: ' ';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: white;
-    color: black;
-    visibility: hidden;
-    border-radius: 10px;
-}
 
-div.newsletter button:hover::before {
-    visibility: visible;
+div.newsletter button:hover {
+    background-color: black;
 }
 
 div.empty {
     width: 100%;
-    height: 300px;
-    background-image: url(../images/58aeffa2c869e092af51ee72.png);
-    background-position: right center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: 3s all ease;
+    height: 100px;
+    text-align: center;
 }
 
-div.empty:hover {
-    background-position: left top;
+div.empty img {
+    margin-top: 2rem;
 }
 
 span.privola {
     font-size: 0.8rem;
 }
+
 
 
 @media screen and (max-width: 1000px) {
@@ -227,7 +223,7 @@ span.privola {
 
 @media screen and (max-width: 768px) {
     div.container2 {
-        display: block;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -243,17 +239,42 @@ span.privola {
         width: 60%;
     }
 
+    
+    div.blog img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 430px) {
     div.container1 h1 {
-        font-size: 1.5rem;
-        left: 20%;
+        font-size: 1rem;
     }
 
     div.proizvodi h2,
     div.popularno h2 {
         font-size: 1rem;
         padding-left: 1rem;
+    }
+
+    div.blog p {
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 1.2rem;
+    }
+
+    div.newsletter {
+        line-height: 1.6rem;
+        width: 70%;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    div.blog {
+        padding: 0;
+    }
+
+    div.container2 {
+        align-items: center;
     }
 }

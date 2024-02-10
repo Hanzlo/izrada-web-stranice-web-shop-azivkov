@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/output-onlinepngtools.png);
+    background-image: url(../images/vector3.png);
     color: black;
 }
 
@@ -37,7 +37,7 @@ div.container {
 }
 
 .contact img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 div.form span {
@@ -168,13 +168,13 @@ div.contact {
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     h1 {
         font-size: 1.2rem;
     }
 
-    input {
-        padding: 0;
+    .form input {
+        padding: 0.5rem 2rem;
     }
 
     textarea {

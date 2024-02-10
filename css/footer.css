@@ -27,7 +27,7 @@ body {
 }
 
 .mapa a:hover {
-    color: #00a3ec;
+    color: #caedff;
 }
 
 .mapa li {
@@ -58,5 +58,10 @@ iframe {
 @media screen and (max-width: 400px) {
     .lokacija iframe {
         width: 300px;
+    }
+
+    .footerrow1 {
+        flex-direction: column;
+        align-items: center;
     }
 }

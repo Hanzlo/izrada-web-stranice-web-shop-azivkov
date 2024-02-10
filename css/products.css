@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(../images/output-onlinepngtools.png);
+    background-image: url(../images/vector3.png);
 }
 
 h1 {
@@ -176,11 +176,11 @@ div[data-status="disabled"]:hover {
         font-size: 2rem;
     }
 
-    ul {
+    .products ul {
         padding: 0;
     }
 
-    li {
+    .products ul li {
         padding: 1rem;
     }
 

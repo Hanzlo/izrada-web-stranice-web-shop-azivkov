@@ -41,7 +41,7 @@ body {
 }
 
 .fa-solid:hover {
-    color: #00a3ec;
+    color:  #b1e5ff;
 }
 
 
@@ -107,7 +107,7 @@ a.mail, a.tel {
 }
 
 a.mail:hover, a.tel:hover {
-    color: #00a3ec;
+    color: #d7f2ff;
 }
 
 .secondrow {
@@ -204,18 +204,36 @@ img.logo {
     input.searchsite {
         margin-left: 4rem;
     }
+
+    img.logo {
+        width: 150px;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .fa-brands, .fa-solid {
         font-size: 1rem;
     }
 
     .nav a {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     input.searchsite {
         margin-left: 1rem;
+    }
+
+    img.logo {
+        width: 80px;
+    }
+
+    .secondrow {
+        justify-content: center;
+    }
+
+    li {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0;
     }
 }

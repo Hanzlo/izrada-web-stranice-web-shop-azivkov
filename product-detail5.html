@@ -46,7 +46,7 @@
                     Cijena: 59,99 €
                 </p>
 
-                <button>Dodaj u košaricu</button>
+                <form><button onclick="addToCart('PS5 igra Baldurs Gate 3', 'images/dgb1t8y-1e29d951-e487-42a0-bf1f-4d2004728cfb.png', '69.99')">Dodaj u košaricu</button></form>
 
                 <h3 class="secondary-font main-text-color">Recenzije</h3>
                 <p>
@@ -64,6 +64,39 @@
     <footer id="footer"></footer>
 
     <script src="js/javascript.js"></script>
+
+    <script>
+        function addToCart(productName, productImage, productPrice) {
+        var getItems = localStorage.getItem("cart");
+
+        if (!getItems) {
+            getItems = [];
+        } else {
+            getItems = JSON.parse(getItems);
+        }
+
+        var isProductInCart = false;
+        for (var i = 0; i < getItems.length; i++) {
+            if (getItems[i].name === productName) {
+                getItems[i].count++;
+                isProductInCart = true;
+                break;
+            }
+        }
+
+        if (!isProductInCart) {
+            var newProduct = { 
+                name: productName, 
+                image: productImage, 
+                price: productPrice,
+                count: 1
+            };
+            getItems.push(newProduct);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(getItems));
+    }
+</script>
 </body>
 
 </html>

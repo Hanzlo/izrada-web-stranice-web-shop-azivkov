@@ -24,8 +24,8 @@
     <header id="header"></header>
     <main>
         <div class="container1">
-            <h1>Dobrodošli u Cyber Shop!</h1>
-            <img src="images/closeup-shot-open-laptop-dark-surface-work-from-home-concept.jpg" alt="Cyber Shop banner"
+            <h1>Uđite u svijet budućnosti sa Cyber Shopom - <br>Vašim pouzdanim partnerom u tehnološkim potrebama!</h1>
+            <img src="images/bd983558d61361e66f41c5b9c622ea98.jpg" alt="Cyber Shop banner"
                 title="Cyber Shop banner">
         </div>
 
@@ -63,17 +63,17 @@
                     </a>
                     <p class="main-font">989,99 €</p>
                     <p>
-                    <form><button>Dodaj u košaricu</button></form>
+                    <form><button onclick="addToCart('iPhone 15 128GB Blue', 'images/1695471431_0903839.jpg', '989.99')">Dodaj u košaricu</button></form>
                     </p>
                 </li>
                 <li><a href="product-detail2.html"><img src="images/s23.jpg"
                             alt="Samsung Galaxy S23 5G 256GB Phantom black"
                             title="Samsung Galaxy S23 5G 256GB Phantom black">
-                        <h3 class="secondary-font">Samsung Galaxy S23 256GB Black</h3>
+                        <h3 class="secondary-font">Samsung Galaxy S23 256GB</h3>
                     </a>
                     <p class="main-font">849,99 €</p>
                     <p>
-                    <form><button>Dodaj u košaricu</button></form>
+                    <form><button onclick="addToCart('Samsung Galaxy S23 256GB Black', 'images/s23.jpg', '849.99')">Dodaj u košaricu</button></form>
                     </p>
                 </li>
                 <li><a href="product-detail3.html"><img
@@ -83,7 +83,7 @@
                     </a>
                     <p class="main-font">829,99 €</p>
                     <p>
-                    <form><button>Dodaj u košaricu</button></form>
+                    <form><button onclick="addToCart('Laptop ACER Aspire 7', 'images/0184462_laptop-acer-aspire-7-nh-qhdex-00c-ryzen-5-5625u-16gb-512gb-ssd-nvidia-geforce-rtx-3050-15-6-fhd-ips.jpg', '829.99')">Dodaj u košaricu</button></form>
                     </p>
                 </li>
                 <li><a href="product-detail4.html"><img src="images/385133_3.jpg" alt="Sony Playstation 5"
@@ -92,7 +92,7 @@
                     </a>
                     <p class="main-font">559,99 €</p>
                     <p>
-                    <form><button>Dodaj u košaricu</button></form>
+                    <form><button onclick="addToCart('Sony Playstation 5', 'images/385133_3.jpg', '559.99')">Dodaj u košaricu</button></form>
                     </p>
                 </li>
                 <li><a href="product-detail5.html"><img src="images/dgb1t8y-1e29d951-e487-42a0-bf1f-4d2004728cfb.png"
@@ -101,7 +101,7 @@
                     </a>
                     <p class="main-font">69,99 €</p>
                     <p>
-                    <form><button>Dodaj u košaricu</button></form>
+                    <form><button onclick="addToCart('PS5 igra Baldurs Gate 3', 'images/dgb1t8y-1e29d951-e487-42a0-bf1f-4d2004728cfb.png', '69.99')">Dodaj u košaricu</button></form>
                     </p>
                 </li>
             </ul>
@@ -156,18 +156,67 @@
                             required><button type="submit">Prijavi se!</button></label><br><br>
                     <label for="privola"><input type="checkbox" id="privola" name="privola" value="yes" required><span
                             class="privola">Prihvaćam prikupljanje i obradu osobnih podataka danih u
-                            obrascu bez kojih moj zahtjev ne može biti ispunjen, te da me Pet Paradise kontaktira u
+                            obrascu bez kojih moj zahtjev ne može biti ispunjen, te da me CyberShop kontaktira u
                             svrhu slanja obavijesti.</span></label>
                 </form>
+
+                <div class="empty">
+                    <img src="images/f2c3136ff5.gif" width="250px" id="laptop" onmouseover="promijeniSliku()" onmouseleave="vratiSliku()">
+                </div>
 
             </div>
 
         </div>
+
     </main>
 
     <footer id="footer"></footer>
 
     <script src="js/javascript.js"></script>
+
+    <script>
+            function addToCart(productName, productImage, productPrice) {
+            var getItems = localStorage.getItem("cart");
+
+            if (!getItems) {
+                getItems = [];
+            } else {
+                getItems = JSON.parse(getItems);
+            }
+
+            var isProductInCart = false;
+            for (var i = 0; i < getItems.length; i++) {
+                if (getItems[i].name === productName) {
+                    getItems[i].count++;
+                    isProductInCart = true;
+                    break;
+                }
+            }
+
+            if (!isProductInCart) {
+                var newProduct = { 
+                    name: productName, 
+                    image: productImage, 
+                    price: productPrice,
+                    count: 1
+                };
+                getItems.push(newProduct);
+            }
+
+            localStorage.setItem("cart", JSON.stringify(getItems));
+        }
+
+        let laptop = document.getElementById("laptop");
+
+        function promijeniSliku() {
+            laptop.setAttribute("src", "images/f2c3136ff6.gif");
+        }
+
+        function vratiSliku() {
+            laptop.setAttribute("src", "images/f2c3136ff5.gif");
+
+        }
+    </script>
 </body>
 
 </html>

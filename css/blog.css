@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/output-onlinepngtools.png);
+    background-image: url(../images/vector3.png);
     color: black;
 }
 
@@ -103,31 +103,22 @@ div.newsletter form {
     padding-bottom: 2rem;
 }
 
+div.newsletter p {
+    line-height: 1.4rem;
+}
+
 div.newsletter button {
     border: 0;
     border-radius: 10px;
     padding: 0.3rem;
     background-color: #00a3ec;
     color: white;
-    font-family: cambria;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
-    position: relative;
 }
 
-div.newsletter button::before {
-    position: absolute;
-    content: ' ';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: #00a3ec;
-    visibility: hidden;
-    border-radius: 10px;
-}
-
-div.newsletter button:hover::before {
-    visibility: visible;
+div.newsletter button:hover {
+    background-color: black;
 }
 
 span.privola {
