@@ -116,6 +116,10 @@ div.moreblog {
     width: 25%;
 }
 
+div.moreblog p {
+    line-height: 1.3rem;
+}
+
 div.moreblog img {
     width: 50%;
     float: left;

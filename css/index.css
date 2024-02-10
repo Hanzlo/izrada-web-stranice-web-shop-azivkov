@@ -100,6 +100,7 @@ div.proizvodi button {
     border: none;
     transition: 0.3s all linear;
     cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 
 div.proizvodi button:hover {
@@ -150,6 +151,9 @@ div.blog img {
 div.blog a {
     color: #00a3ec;
     font-family: 'Robot', sans-serif;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    font-weight: 600;
 }
 
 div.blog a:hover {
@@ -167,8 +171,9 @@ div.blog div {
 
 div.blog p {
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: justify;
+    line-height: 1.5rem;
 }
 
 div.blog div:hover {
@@ -177,9 +182,10 @@ div.blog div:hover {
 
 div.newsletter {
     width: 50%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-right: 1rem;
     text-align: justify;
+    line-height: 1.5rem;
 }
 
 div.newsletter input {
@@ -218,11 +224,12 @@ div.empty {
 }
 
 div.empty img {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 span.privola {
     font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -235,6 +242,10 @@ span.privola {
 
     .katproizvodi, .katproizvodi2, .popproizv {
         flex-wrap: wrap;
+    }
+
+    div.newsletter img {
+        width: 100%;
     }
 }
 
@@ -294,4 +305,6 @@ span.privola {
     div.container2 {
         align-items: center;
     }
+
+
 }

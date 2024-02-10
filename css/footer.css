@@ -60,8 +60,9 @@ iframe {
         width: 300px;
     }
 
-    .footerrow1 {
+    .footerrow1 li {
         flex-direction: column;
         align-items: center;
+        font-size: 1.2rem;
     }
 }
