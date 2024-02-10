@@ -58,13 +58,13 @@ div.proizvodi {
     text-align: center;
 }
 
-.katproizvodi, .popproizv {
+.katproizvodi, .popproizv, .katproizvodi2 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
 }
 
-.katproizvodi li, .popproizv li {
+.katproizvodi li, .katproizvodi2 li, .popproizv li {
     list-style-type: none;
     padding: 0 0.5rem;
 }
@@ -87,7 +87,24 @@ li h3 {
 .proizvodi img {
     width: 250px;
     box-shadow: 0.5px 0.5px 5px grey;
+}
 
+div.proizvodi button {
+    background-color: black;
+    color: white;
+    width: 250px;
+    padding: 1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    transition: 0.3s all linear;
+    cursor: pointer;
+}
+
+div.proizvodi button:hover {
+    background-color: #00a3ec;
+    color: black;
 }
 
 div.popularno {
@@ -216,7 +233,7 @@ span.privola {
         left: 30%;
     }
 
-    .katproizvodi, .popproizv {
+    .katproizvodi, .katproizvodi2, .popproizv {
         flex-wrap: wrap;
     }
 }

@@ -76,6 +76,7 @@ div.kategorije h2 {
 div.kategorije ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 div.kategorije li {
