@@ -31,7 +31,7 @@
                     <th>Naziv</th>
                     <th>Cijena</th>
                     <th>#</th>
-                    <th>Ukloni</th>
+                    <th></th>
                 </tr>
             </table>
         </div>
@@ -53,7 +53,7 @@
         if (cartItems && Array.isArray(cartItems) && cartItems.length > 0) {
             for (var i = 0; i < cartItems.length; i++) {
                 var newRow = document.createElement("tr");
-                newRow.innerHTML = `<td><img src="${cartItems[i].image}" width="50"></td> <td>${cartItems[i].name}</td> <td>${parseFloat(cartItems[i].price).toFixed(2)} €</td><td>${cartItems[i].count}</td><td><input type="button" value="X" onclick="removeItem(${i})"></td>`;
+                newRow.innerHTML = `<td><img src="${cartItems[i].image}" width="50"></td> <td>${cartItems[i].name}</td> <td>${parseFloat(cartItems[i].price).toFixed(2)} €</td><td>${cartItems[i].count}</td><td><input type="button" value="Ukloni" class="remove" onclick="removeItem(${i})"></td>`;
                 table.appendChild(newRow);
 
                 ukupnaCijena += (parseFloat(cartItems[i].price) * cartItems[i].count);
